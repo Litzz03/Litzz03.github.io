@@ -1,0 +1,98 @@
+Body{
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+}
+.botao-categoria, .botao-ordenar{
+    background-color: #4CAF50;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao-categoria:hover {
+    background-color: #2e7230;
+}
+
+.botao-ordenar{
+    background-color: #173b8f;
+}
+
+.botao-ordenar:hover{
+    background-color: #0d2252;
+}
+
+.box-imagens {  
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+  
+.imagem {
+    width: calc(50% - 30px);
+    height: calc(50% - 30px); 
+    max-width: calc(50vw - 30px);
+    max-height: calc(50vh - 35px); 
+    margin: 10px;
+}
+
+.imagem img{
+    width: 100%;
+    max-width: 100vh;
+    border-radius: 15pxx;
+}
+
+.imagem-selecionada{
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    height: 100vh;
+}
+
+.bg-img{
+    background-color: #2b2b2bc0;
+}
+
+.fechar-imagem{
+    position: absolute;
+    color: #FFF;
+    font-weight: bold;
+    right: 20px;
+    top: 20px;
+    padding: 7px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    display: none;
+}
+  
+footer{
+    height: 40px;
+    background-color: #333;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+}
+
+.active{
+    background-color: #2e6d30;
+}
+
