@@ -1,4 +1,4 @@
-Body{
+body {
     background-color: #f4f4f4;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -6,12 +6,15 @@ Body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
     background-color: #333;
     color: #FFF;
     text-align: center;
 }
-.botao-categoria, .botao-ordenar{
+
+.botao-categoria,
+.botao-ordenar {
     background-color: #4CAF50;
     color: #FFF;
     padding: 10px 20px;
@@ -25,65 +28,63 @@ header{
     background-color: #2e7230;
 }
 
-.botao-ordenar{
+.botao-ordenar {
     background-color: #173b8f;
 }
 
-.botao-ordenar:hover{
+.botao-ordenar:hover {
     background-color: #0d2252;
 }
 
-.box-imagens {  
-    display: flex;
-    justify-content: center;
+.box-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px;
-    flex-wrap: wrap;
 }
-  
+
 .imagem {
-    width: calc(50% - 30px);
-    height: calc(50% - 30px); 
-    max-width: calc(50vw - 20px);
-    max-height: calc(50vh - 25px); 
-    margin: 10px;
+    width: 100%; /* Ocupa todo o espaço da célula da grade */
+    padding-bottom: 100%; /* Mantém a proporção quadrada */
+    position: relative;
 }
 
-.imagem img{
-    width: 75%;
-    max-width: 50vh;
-    border-radius: 20px;
-}
-
-.imagem-selecionada{
+.imagem img {
     position: absolute;
+    width: calc(100% - 10px); /* Ajuste do tamanho da imagem */
+    height: calc(100% - 100px); /* Ajuste do tamanho da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 20px; /* Adiciona borda arredondada */
+}
+
+.imagem-selecionada {
+    position: fixed;
     top: 0;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
+    bottom: 0;
     text-align: center;
     z-index: 2;
-    height: 100vh;
 }
 
-.bg-img{
+.bg-img {
     background-color: #2b2b2bc0;
 }
 
-.fechar-imagem{
+.fechar-imagem {
     position: absolute;
     color: #FFF;
     font-weight: bold;
-    right: 20px;
     top: 20px;
+    right: 20px;
     padding: 7px;
     cursor: pointer;
     border: 1px solid #FFF;
     border-radius: 20px;
     display: none;
 }
-  
-footer{
+
+footer {
     height: 40px;
     background-color: #333;
     width: 100%;
@@ -92,7 +93,6 @@ footer{
     color: #FFF;
 }
 
-.active{
+.active {
     background-color: #2e6d30;
 }
-
