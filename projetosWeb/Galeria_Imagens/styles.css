@@ -43,15 +43,15 @@ header{
 .imagem {
     width: calc(50% - 30px);
     height: calc(50% - 30px); 
-    max-width: calc(50vw - 30px);
-    max-height: calc(50vh - 35px); 
+    max-width: calc(50vw - 20px);
+    max-height: calc(50vh - 25px); 
     margin: 10px;
 }
 
 .imagem img{
-    width: 100%;
-    max-width: 100vh;
-    border-radius: 15pxx;
+    width: 75%;
+    max-width: 50vh;
+    border-radius: 20px;
 }
 
 .imagem-selecionada{
