@@ -35,4 +35,9 @@ $(document).ready(function(){
     function loading(){
         $('#resultados').html('<img src="imagens/loading.gif" />')
     }
+
+    $('body').on('click', '#modo-noturno', function(){
+        $('body').toggleClass('dark-mode');
+        $('.container').toggleClass('dark-container');
+    })
 })

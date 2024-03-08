@@ -6,6 +6,7 @@ body{
     height: 100vh;
     background-color: #4069c9;
     color: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -31,4 +32,29 @@ body{
     font-size: 1.5rem;
     text-align: center;
     color: red;
+}
+
+#modo-noturno{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 2em;
+    color: #000;
+}
+
+#modo-noturno :hover{
+    color: #ffffffbe;
+}
+
+.dark-mode{
+    background-color: #030e29;
+}
+
+.dark-container{
+    background-color: #191a50;
+    color: #000;
+    font-weight: bold;
 }
