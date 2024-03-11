@@ -1,0 +1,28 @@
+body{
+	background-color: #f3f3f3;
+	display: grid;
+	grid-template-rows:auto 1fr auto;
+	height: 100vh;
+	margin: 0;
+}
+header{
+	background-color: #13259d;
+	color:#D9D8D9;
+	text-align: center;
+}
+button{
+	background-color: #13259d;
+    cursor: pointer;
+    border-radius: 8px;
+	border: 0;
+    color: #f3f3f3;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+.active{
+	background-color: #0b1242;
+}
+#modo-noturno :hover{
+    color: #ffffffbe;
+}
