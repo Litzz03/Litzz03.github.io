@@ -8,24 +8,24 @@ body {
 
 .conteudo {
     margin: 0 auto;
-    width: 90%; 
+    width: 90%;
     max-width: 450px;
     margin-top: 5%;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
     background: #2b2a2a;
-    padding: 5%; 
+    padding: 5%;
     border-radius: 12px;
 }
 
 .topo {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3.5%;   
+    margin-bottom: 3.5%;
 }
 
 .topo input {
-    width: 70%; 
-    padding: 3.5%; 
+    width: 70%;
+    padding: 3.5%;
     border-radius: 12px;
     border: 1px solid #191818;
     outline: none;
@@ -35,7 +35,7 @@ body {
 }
 
 .topo button {
-    width: 15%; 
+    width: 15%;
     border-radius: 12px;
     border: 1px solid #191818;
     background: #191818;
@@ -45,11 +45,11 @@ body {
 
 @media screen and (max-width: 600px) {
     .topo input {
-        width: 60%; 
+        width: 60%;
     }
 
     .topo button {
-        width: 25%; 
+        width: 25%;
     }
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 #listaTarefas li {
-    padding: 3.5%; 
+    padding: 3.5%;
     background: #191818;
     border-radius: 12px;
     display: flex;
@@ -72,8 +72,8 @@ body {
 .btnAcao {
     border-radius: 20px;
     border: 1px solid #191818;
-    width: 40%;
-    height: 40%; 
+    width: 8%;
+    height: 8%;
     margin-right: 2%;
     cursor: pointer;
     background: #2b2a2a;
@@ -83,8 +83,8 @@ body {
 
 @media screen and (max-width: 600px) {
     .btnAcao {
-        width: 10%; 
-        height: 10%; 
+        width: 10%;
+        height: 10%;
         margin-right: 3%;
     }
 }
@@ -96,7 +96,7 @@ body {
 .textoTarefa {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 65%; 
+    width: 65%;
     white-space: nowrap;
 }
 
@@ -105,10 +105,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 5%; 
+    padding: 5%;
     background: #191818;
     border: 1px solid #2f2e2e;
-    width: 90%; 
+    width: 90%;
     border-radius: 12px;
     z-index: 200;
     display: none;
@@ -138,8 +138,8 @@ body {
     position: absolute;
     top: -25px;
     right: -18px; 
-    width: 5%; 
-    height: 5%; 
+    width: 5%;
+    height: 5%;
     border-radius: 50%;
     border: 1px solid #2d2c2c;
     background: #2d2c2c;
@@ -149,17 +149,17 @@ body {
 
 form {
     width: 100%;
-    margin-top: 5%; 
+    margin-top: 5%;
 }
 
 .frm-linha {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
 }
 
 .frm-linha label {
-    margin-bottom: 3.5%; 
+    margin-bottom: 3.5%;
 }
 
 .frm-linha input {
@@ -175,12 +175,12 @@ form {
 .frm-linha button {
     background: #2d2c2c;
     border: 1px solid #191818;
-    padding: 3.5%; 
-    margin-bottom: 5%; 
+    padding: 3.5%;
+    margin-bottom: 5%;
     border-radius: 12px;
     color: #CCC;
     cursor: pointer;
-    height: 10%; 
+    height: 10%;
     font-size: 1.3rem;
     outline: none;
 }
