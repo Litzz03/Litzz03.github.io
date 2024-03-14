@@ -56,7 +56,5 @@ $(document).ready(function(){
         $('body').toggleClass('dark-mode');
         $('body').find('container').toggleClass('dark-container');
         $('body').find('lampada').toggleClass('apagada');
-    }else{
-        Cookies.set('modo-noturno', 'on');
     }
 })
