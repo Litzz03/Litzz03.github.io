@@ -34,10 +34,29 @@ $(document).ready(function(){
 
     function loading(){
         $('#resultados').html('<img src="imagens/loading.gif" />')
-    }
+    };
 
     $('body').on('click', '#modo-noturno', function(){
         $('body').toggleClass('dark-mode');
-        $('.container').toggleClass('dark-container');
-    })
+        $('body').find('.container').toggleClass('dark-container');
+        $(this).toggleClass('apagada');
+
+        if (Cookies.get('modo-noturno') == 'on'){
+            Cookies.set('modo-noturno', 'off');
+        }else{
+            Cookies.set('modo-noturno', 'on');
+        }
+    });
+
+    $('body').on('input', '#cep', function(){
+        $(this).val($(this).val().replace(/\D/g, ''));
+    });
+
+    if (Cookies.get('modo-noturno') == 'on'){
+        $('body').toggleClass('dark-mode');
+        $('body').find('container').toggleClass('dark-container');
+        $('body').find('lampada').toggleClass('apagada');
+    }else{
+        Cookies.set('modo-noturno', 'on');
+    }
 })

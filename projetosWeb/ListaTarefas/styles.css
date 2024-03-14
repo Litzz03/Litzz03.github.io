@@ -43,6 +43,19 @@ body {
     outline: none;
 }
 
+#btnAddTarefa:hover {
+    background: #0e0d0d;
+}
+
+#btnAddTarefa:active {
+    background-color: #2d2c2c;
+    border-color: white;
+}
+
+#inputNovaTarefa:active {
+    border-color: white;
+}
+
 @media screen and (max-width: 600px) {
     .topo input {
         width: 60%;

@@ -15,12 +15,13 @@ janelaEdicaoBtnFechar.addEventListener('click', (e) => {
 });
 
 btnAddTarefa.addEventListener('click', (e) => {
-
-    let tarefa = {
-        nome: inputNovaTarefa.value,
-        id: gerarIdV2(),
+    if (inputNovaTarefa.value !== "")  {
+        let tarefa = {
+            nome: inputNovaTarefa.value,
+            id: gerarIdV2(),
+        }
+        adicionarTarefa(tarefa);   
     }
-    adicionarTarefa(tarefa);
 });
 
 btnAtualizarTarefa.addEventListener('click', (e) => {
