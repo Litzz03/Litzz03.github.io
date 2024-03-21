@@ -1,0 +1,102 @@
+.currencyConverter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  height: 80vh;
+  margin: 40px;
+  padding: 30px;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--secondary);
+}
+
+.selectSection,
+.resultSection,
+.imageSection {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  padding: 20px;
+}
+
+.selectSection select,
+button {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: var(--soft-white);
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.selectSection select:hover,
+button:hover {
+  border-color: var(--soft-white);
+  box-shadow: 0 0 10px var(--black);
+}
+  
+.selectSection select[multiple] {
+  height: 50%;
+}
+
+.selectSection button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.selectSection button:hover {
+  background-color: var(--secondary);
+}
+
+.selectSection label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--secondary);
+} 
+
+.imageSection {
+  justify-content: center;
+}
+
+.imageSection img {
+  display: block;
+  margin: 20px auto;
+  max-width: 50%;
+}
+
+.resultSection div {
+  height: 90%;
+  width: 100%;
+  padding: 10px;
+}
+
+.resultSection h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--secondary);
+}
+
+.resultSection ul {
+  max-height: 100%;
+  width: 100%;
+  overflow: auto; 
+  list-style: none;
+  text-align: center;
+}  
+
+.resultSection li {
+  font-size: 0.9rem;
+  margin-block: 8px;
+  color: var(--primary);
+}  
+  

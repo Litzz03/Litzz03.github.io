@@ -1,0 +1,48 @@
+.bitCoinTracker {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.bitCoinTracker h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bitCoinTracker button {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto;  
+    padding: 12px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.bitCoinTracker button.loading {
+    background-color: var(--secondary);
+}
+
+.bitCoinTracker button:hover {
+    background-color: var(--red);
+}
+
+.results{
+    margin-block: 12px;  
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--red);
+}
+.variation {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary);
+}

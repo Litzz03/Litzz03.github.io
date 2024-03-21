@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #615f5f;
+  --secondary: #787777;
+  --white: #FFFFFF;
+  --soft-white: #faf7f7; 
+  --black: #111;
+  --red: #8C1717;
+  --soft-red: #f25757;
+}
+
