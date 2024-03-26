@@ -2,17 +2,26 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contador from "./components/Contador";
+import Cookies from "js-cookie"
 
 const App = () => {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    Cookies.get("dark-mode") === "true"? true : false
+  );
 
   const alterarDarkMode = () => {
-    setDarkMode(!darkMode)
+    setDarkMode(!darkMode);
+
+    if(darkMode){
+      Cookies.set("dark-mode", false);
+    }else{
+      Cookies.set("dark-mode", true);
+    }
   };
 
   return (
-    <div className={darkMode ? 'modo-escuro' : ''}>
+    <div className={`main ${darkMode ? 'modo-escuro' : ''}`}>
       <Header/>
       <Contador/>
       Alterar cor de Fundo

@@ -21,15 +21,15 @@ const Contador = () => {
     return(
         <>
             Contador:{count}
-            <p>
+            <div>
             <button onClick={incrementar}>Incrementar</button>
             <button onClick={decrementar}>Decrementar</button>
-            </p>
-            <p>
+            </div>
+            <div>
                 Digite algo: 
                 <input type="text" onChange={showText}></input>
               <p> O texto digitado é:{text}</p> 
-           </p>
+           </div>
         </>
     )
 }
